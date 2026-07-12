@@ -219,7 +219,12 @@ a.contact__card:hover { transform: translateY(-4px); border-color: var(--accent)
 .manifesto__text p { color: var(--text-dim); max-width: 46em; }
 .manifesto__text p + p { margin-top: .8em; }
 .manifesto__mark { display: flex; justify-content: center; }
-.manifesto__mark img { width: min(300px, 55%); height: auto; opacity: .92; filter: drop-shadow(0 24px 48px rgba(0,0,0,.55)); }
+.manifesto__mark img {
+  width: min(420px, 100%); height: auto;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px -18px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.06);
+  aspect-ratio: 4 / 5; object-fit: cover;
+}
 
 /* Instagram ao vivo (iPhone) --------------------------------------- */
 .ig { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; justify-items: center; }
@@ -367,7 +372,7 @@ a.contact__card:hover { transform: translateY(-4px); border-color: var(--accent)
   .about { grid-template-columns: 1.3fr .7fr; gap: 60px; }
   .footer__inner { grid-template-columns: 1.4fr 1fr auto; }
   .contact__grid { grid-template-columns: repeat(4, 1fr); }
-  .manifesto__inner { grid-template-columns: 1.5fr .5fr; gap: 60px; }
+  .manifesto__inner { grid-template-columns: 1.15fr .85fr; gap: 64px; }
   .ig { grid-template-columns: auto 1fr; gap: 64px; justify-items: start; }
   .ig__side { text-align: left; justify-items: start; }
   .forms { grid-template-columns: 1fr 1fr; align-items: start; }
