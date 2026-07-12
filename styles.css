@@ -200,7 +200,7 @@ p { margin: 0 0 1rem; }
 }
 a.contact__card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .contact__label { color: var(--accent); font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
-.contact__value { font-size: 1.25rem; font-weight: 700; }
+.contact__value { font-size: 1.25rem; font-weight: 700; overflow-wrap: anywhere; }
 .contact__hint { color: var(--text-dim); font-size: .9rem; }
 .contact__card--static { opacity: .95; }
 
