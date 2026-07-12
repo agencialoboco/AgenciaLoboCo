@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="560" height="140" role="img" aria-label="Agência Lobo & Co">
+  <!-- Lockup horizontal recriado (agencia.md): emblema + wordmark, positiva/branca para fundo escuro -->
+  <g transform="translate(8,10)">
+    <rect x="0" y="0" width="120" height="120" rx="26" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.9"/>
+    <g transform="translate(60,60) scale(0.18) translate(-256,-256)">
+      <path fill="#FFFFFF" d="M150 150 L210 208 L256 176 L302 208 L362 150 L348 268 L396 306 L330 326 L300 366 L256 404 L212 366 L182 326 L116 306 L164 268 Z"/>
+      <g fill="#0E1217">
+        <path d="M196 250 L244 264 L200 278 Z"/>
+        <path d="M316 250 L268 264 L312 278 Z"/>
+        <path d="M256 300 L238 344 L256 360 L274 344 Z"/>
+      </g>
+    </g>
+  </g>
+  <text x="150" y="58" fill="#FFFFFF" font-family="Poppins, Arial, sans-serif" font-weight="600" font-size="22" letter-spacing="9">AGÊNCIA</text>
+  <text x="148" y="106" fill="#FFFFFF" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="46" letter-spacing="1">LOBO &amp; CO</text>
+</svg>
