@@ -100,6 +100,7 @@
           <li><a href="#diferenciais">Diferenciais</a></li>
           <li><a href="#pacotes">Pacotes</a></li>
           <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#instagram">Instagram</a></li>
           <li><a href="#contato" class="nav__cta">Fazer orçamento</a></li>
         </ul>
       </nav>
@@ -148,6 +149,21 @@
         </div>
       </div>
       <p class="stats__note">Dados de mercado (2026). Não usamos dados de clientes em nossa comunicação.</p>
+    </section>
+
+    <!-- ===================== MANIFESTO / O JEITO LOBO ===================== -->
+    <section class="manifesto" id="jeito-lobo" aria-labelledby="manifesto-title">
+      <div class="container manifesto__inner">
+        <div class="manifesto__text">
+          <h2 id="manifesto-title">O jeito Lobo &amp; Co de fazer marketing é mais estratégico, mais próximo e gera <span class="manifesto__accent">impacto real</span>.</h2>
+          <p class="manifesto__strong">Com clareza, método e faro.</p>
+          <p>Se não funciona para o seu negócio, não funciona pra gente. Criamos estratégias consistentes o suficiente para gerar vendas, fortalecer a sua marca e abrir caminhos novos.</p>
+          <p>Criatividade só vale quando converte. Presença digital só importa quando vira resultado palpável.</p>
+        </div>
+        <div class="manifesto__mark" aria-hidden="true">
+          <img src="assets/img/logo-positiva.png" alt="" width="300" height="328" loading="lazy" />
+        </div>
+      </div>
     </section>
 
     <!-- ===================== SERVIÇOS ===================== -->
@@ -413,8 +429,37 @@
       </div>
     </section>
 
+    <!-- ===================== INSTAGRAM AO VIVO ===================== -->
+    <section class="section section--alt" id="instagram" aria-labelledby="instagram-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Na prática</p>
+          <h2 id="instagram-title">Acompanhe a matilha no Instagram</h2>
+          <p class="section__sub">Conteúdo diário de marketing, direto do nosso feed — em tempo real.</p>
+        </header>
+
+        <div class="ig">
+          <div class="iphone" role="figure" aria-label="Feed do Instagram da Agência Lobo & Co exibido em um iPhone">
+            <span class="iphone__island" aria-hidden="true"></span>
+            <iframe
+              class="iphone__screen"
+              src="https://www.instagram.com/agencialobo.co/embed/"
+              title="Feed do Instagram @agencialobo.co"
+              loading="lazy"
+              scrolling="yes"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="ig__side">
+            <h3>@agencialobo.co</h3>
+            <p>Estratégias, bastidores e conteúdo que ensina de verdade: Storytelling, Branding, Neuromarketing e tráfego pago, todo dia no seu feed.</p>
+            <a class="btn btn--primary" href="https://www.instagram.com/agencialobo.co/" target="_blank" rel="noopener" data-cta="instagram-seguir">Seguir a Lobo &amp; Co</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== CONTATO ===================== -->
-    <section class="section section--alt contact" id="contato" aria-labelledby="contato-title">
+    <section class="section contact" id="contato" aria-labelledby="contato-title">
       <div class="container">
         <header class="section__head">
           <p class="eyebrow">Vamos conversar</p>
@@ -443,6 +488,121 @@
             <span class="contact__value">Rio de Janeiro &amp; São Paulo</span>
             <span class="contact__hint">Seg a sex, 07h às 19h</span>
           </div>
+        </div>
+
+        <div class="forms">
+          <!-- Formulário 1: Deixe sua Mensagem -->
+          <form class="form" id="form-mensagem" novalidate>
+            <h3 class="form__title">Deixe sua mensagem</h3>
+            <p class="form__sub">Resposta rápida pelo WhatsApp, em horário comercial.</p>
+
+            <div class="form__field">
+              <label for="msg-nome">Nome</label>
+              <input type="text" id="msg-nome" name="nome" autocomplete="name" required />
+            </div>
+            <div class="form__field">
+              <label for="msg-whats">WhatsApp</label>
+              <input type="tel" id="msg-whats" name="whatsapp" inputmode="tel" placeholder="(21) 99999-9999" autocomplete="tel" required />
+            </div>
+            <div class="form__field">
+              <label for="msg-email">E-mail</label>
+              <input type="email" id="msg-email" name="email" autocomplete="email" />
+            </div>
+            <div class="form__field">
+              <label for="msg-desejo">O que deseja?</label>
+              <textarea id="msg-desejo" name="desejo" rows="4" required></textarea>
+            </div>
+
+            <button type="button" class="form__promo" id="btn-divulgacao" aria-pressed="false">
+              🎁 Aperte aqui se você acessou o site através de <strong>Divulgação</strong> e ganhe desconto!
+            </button>
+            <p class="form__promo-note" id="promo-note" hidden>Desconto de divulgação garantido! Ele já vai marcado na sua mensagem. 🐺</p>
+
+            <fieldset class="form__field form__radios">
+              <legend>Por onde você veio?</legend>
+              <label><input type="radio" name="origem" value="Google" /> Google</label>
+              <label><input type="radio" name="origem" value="Facebook" /> Facebook</label>
+              <label><input type="radio" name="origem" value="Instagram" /> Instagram</label>
+              <label><input type="radio" name="origem" value="LinkedIn" /> LinkedIn</label>
+              <label><input type="radio" name="origem" value="Divulgação" /> Divulgação</label>
+            </fieldset>
+
+            <button type="submit" class="btn btn--primary form__submit" data-cta="form-mensagem-enviar">Enviar</button>
+            <p class="form__hint">Ao enviar, sua mensagem abre pronta no nosso WhatsApp — é só confirmar.</p>
+          </form>
+
+          <!-- Formulário 2: Solicite uma proposta -->
+          <form class="form" id="form-proposta" novalidate>
+            <h3 class="form__title">Solicite uma proposta</h3>
+            <p class="form__sub">Para empresas: conte o contexto e receba uma proposta sob medida.</p>
+
+            <div class="form__row">
+              <div class="form__field">
+                <label for="prop-nome">Nome</label>
+                <input type="text" id="prop-nome" name="nome" autocomplete="name" required />
+              </div>
+              <div class="form__field">
+                <label for="prop-tel">Telefone</label>
+                <input type="tel" id="prop-tel" name="telefone" inputmode="tel" autocomplete="tel" required />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="prop-email">E-mail</label>
+                <input type="email" id="prop-email" name="email" autocomplete="email" required />
+              </div>
+              <div class="form__field">
+                <label for="prop-empresa">Empresa</label>
+                <input type="text" id="prop-empresa" name="empresa" autocomplete="organization" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="prop-pref">Preferência de contato</label>
+                <select id="prop-pref" name="preferencia">
+                  <option value="WhatsApp" selected>WhatsApp</option>
+                  <option value="E-mail">E-mail</option>
+                  <option value="Telefone">Telefone</option>
+                </select>
+              </div>
+              <div class="form__field">
+                <label for="prop-busca">O que está buscando</label>
+                <select id="prop-busca" name="busca">
+                  <option value="Tráfego pago" selected>Tráfego pago (Meta, Google, TikTok…)</option>
+                  <option value="Gestão de redes sociais">Gestão de redes sociais</option>
+                  <option value="Produção de conteúdo e design">Produção de conteúdo e design</option>
+                  <option value="Criação de site ou landing page">Criação de site ou landing page</option>
+                  <option value="SEO">SEO</option>
+                  <option value="E-mail marketing e automação">E-mail marketing e automação</option>
+                  <option value="Pacote completo">Pacote completo</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="prop-como">Como nos encontrou?</label>
+              <select id="prop-como" name="como">
+                <option value="Indicação" selected>Indicação</option>
+                <option value="Google">Google</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Divulgação">Divulgação</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="prop-msg">Mensagem</label>
+              <textarea id="prop-msg" name="mensagem" rows="4"></textarea>
+            </div>
+            <label class="form__check">
+              <input type="checkbox" id="prop-termos" required />
+              <span>Aceito os termos de uso e a política de compartilhamento de dados: as informações enviadas são usadas apenas para responder este contato.</span>
+            </label>
+
+            <button type="submit" class="btn btn--primary form__submit" data-cta="form-proposta-enviar">Solicitar proposta</button>
+            <p class="form__hint">Sua solicitação abre pronta no nosso WhatsApp — é só confirmar o envio.</p>
+          </form>
         </div>
       </div>
     </section>

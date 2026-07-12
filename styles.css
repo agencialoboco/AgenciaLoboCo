@@ -204,6 +204,97 @@ a.contact__card:hover { transform: translateY(-4px); border-color: var(--accent)
 .contact__hint { color: var(--text-dim); font-size: .9rem; }
 .contact__card--static { opacity: .95; }
 
+/* Manifesto / O jeito Lobo ---------------------------------------- */
+.manifesto {
+  background:
+    radial-gradient(900px 420px at 85% 20%, rgba(242,160,7,.28), transparent 65%),
+    linear-gradient(135deg, #10151c 0%, #1a1206 55%, #241703 100%);
+  border-block: 1px solid var(--border);
+  padding: clamp(64px, 10vw, 120px) 0;
+}
+.manifesto__inner { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+.manifesto__text h2 { font-size: clamp(1.7rem, 4.6vw, 2.6rem); font-weight: 800; line-height: 1.25; margin-bottom: .9em; max-width: 21em; }
+.manifesto__accent { color: var(--accent); }
+.manifesto__strong { font-size: 1.15rem; font-weight: 600; color: var(--text); }
+.manifesto__text p { color: var(--text-dim); max-width: 46em; }
+.manifesto__text p + p { margin-top: .8em; }
+.manifesto__mark { display: flex; justify-content: center; }
+.manifesto__mark img { width: min(300px, 55%); height: auto; opacity: .92; filter: drop-shadow(0 24px 48px rgba(0,0,0,.55)); }
+
+/* Instagram ao vivo (iPhone) --------------------------------------- */
+.ig { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; justify-items: center; }
+.iphone {
+  position: relative;
+  width: min(340px, 88vw);
+  aspect-ratio: 9 / 19;
+  background: #05070a;
+  border-radius: 52px;
+  border: 3px solid #2a3038;
+  box-shadow:
+    inset 0 0 0 10px #05070a,
+    0 30px 60px -18px rgba(0,0,0,.7),
+    0 0 0 1px rgba(255,255,255,.04);
+  padding: 14px;
+  overflow: hidden;
+}
+.iphone__island {
+  position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+  width: 96px; height: 26px; border-radius: 999px; background: #05070a;
+  z-index: 2; pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.05);
+}
+.iphone__screen {
+  width: 100%; height: 100%;
+  border: 0; border-radius: 38px;
+  background: #fff;
+}
+.ig__side { max-width: 420px; text-align: center; display: grid; gap: 14px; justify-items: center; }
+.ig__side h3 { font-size: 1.5rem; color: var(--accent); }
+.ig__side p { color: var(--text-dim); margin: 0; }
+
+/* Formulários ------------------------------------------------------ */
+.forms { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
+.form {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 32px 26px; display: flex; flex-direction: column; gap: 16px;
+}
+.form__title { font-size: 1.45rem; }
+.form__sub { color: var(--text-dim); font-size: .95rem; margin: -8px 0 0; }
+.form__row { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.form__field { display: flex; flex-direction: column; gap: 6px; }
+.form__field label, .form__radios legend { font-size: .88rem; font-weight: 600; color: var(--text); }
+.form__field input, .form__field textarea, .form__field select {
+  background: var(--bg-alt); color: var(--text);
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px 14px; font: inherit; width: 100%;
+}
+.form__field textarea { resize: vertical; min-height: 96px; }
+.form__field input:focus-visible, .form__field textarea:focus-visible, .form__field select:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent);
+}
+.form__field input.is-invalid, .form__field textarea.is-invalid { border-color: #e5484d; }
+.form__promo {
+  background: rgba(242,160,7,.1); color: var(--text);
+  border: 1px dashed var(--accent); border-radius: 12px;
+  padding: 14px 16px; font: inherit; font-size: .95rem; text-align: left;
+  cursor: pointer; transition: background .2s var(--ease);
+}
+.form__promo:hover { background: rgba(242,160,7,.18); }
+.form__promo[aria-pressed="true"] { background: rgba(242,160,7,.24); border-style: solid; }
+.form__promo-note { color: var(--accent); font-size: .9rem; font-weight: 600; margin: -6px 0 0; }
+.form__radios { border: 0; padding: 0; margin: 0; }
+.form__radios legend { margin-bottom: 8px; }
+.form__radios label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 500; font-size: .95rem; color: var(--text-dim);
+  margin: 0 16px 8px 0; cursor: pointer;
+}
+.form__radios input { accent-color: var(--accent); width: 16px; height: 16px; }
+.form__check { display: flex; gap: 10px; align-items: flex-start; font-size: .88rem; color: var(--text-dim); cursor: pointer; }
+.form__check input { accent-color: var(--accent); width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; }
+.form__submit { width: 100%; }
+.form__hint { color: var(--text-dim); font-size: .82rem; margin: -6px 0 0; text-align: center; }
+
 /* Pilares / diferenciais ------------------------------------------ */
 .pillars { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 18px; }
 .pillar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 30px 26px; border-top: 3px solid var(--accent); }
@@ -276,6 +367,11 @@ a.contact__card:hover { transform: translateY(-4px); border-color: var(--accent)
   .about { grid-template-columns: 1.3fr .7fr; gap: 60px; }
   .footer__inner { grid-template-columns: 1.4fr 1fr auto; }
   .contact__grid { grid-template-columns: repeat(4, 1fr); }
+  .manifesto__inner { grid-template-columns: 1.5fr .5fr; gap: 60px; }
+  .ig { grid-template-columns: auto 1fr; gap: 64px; justify-items: start; }
+  .ig__side { text-align: left; justify-items: start; }
+  .forms { grid-template-columns: 1fr 1fr; align-items: start; }
+  .form__row { grid-template-columns: 1fr 1fr; }
 }
 
 /* Menu mobile ----------------------------------------------------- */
