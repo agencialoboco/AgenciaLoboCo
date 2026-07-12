@@ -34,6 +34,32 @@
     });
   }
 
+  // ------- Instagram no iPhone: ajusta a tela à altura real do feed -------
+  // O embed do Instagram envia mensagens MEASURE com a altura do conteúdo;
+  // usamos isso pra tela do iPhone terminar exatamente onde o feed termina.
+  var igFrame = document.querySelector(".iphone__screen");
+  if (igFrame) {
+    // Altura calculada pela geometria do embed de perfil:
+    // cabeçalho (~132px) + 2 fileiras de posts quadrados (largura/3 cada).
+    function ajustarTelaIg() {
+      var w = igFrame.clientWidth || 340;
+      igFrame.style.height = Math.round(132 + 2 * (w / 3)) + "px";
+    }
+    ajustarTelaIg();
+    window.addEventListener("resize", ajustarTelaIg);
+
+    // Se o embed informar a altura exata (MEASURE), ela prevalece.
+    window.addEventListener("message", function (e) {
+      if (typeof e.origin !== "string" || e.origin.indexOf("instagram.com") === -1) return;
+      var dados = e.data;
+      try { if (typeof dados === "string") dados = JSON.parse(dados); } catch (_) { return; }
+      if (dados && dados.type === "MEASURE" && dados.details && dados.details.height) {
+        igFrame.style.height = Math.min(dados.details.height, 760) + "px";
+        window.removeEventListener("resize", ajustarTelaIg);
+      }
+    });
+  }
+
   // ------- Formulários → WhatsApp da agência (sem backend) -------
   var WHATS = "5521979716810";
 
