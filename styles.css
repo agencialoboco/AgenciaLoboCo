@@ -106,7 +106,13 @@ p { margin: 0 0 1rem; }
 .nav__toggle span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: .25s var(--ease); }
 
 /* Hero ------------------------------------------------------------ */
-.hero { position: relative; overflow: hidden; padding: clamp(64px, 12vw, 128px) 0 clamp(48px, 8vw, 96px); }
+.hero {
+  position: relative; overflow: hidden;
+  padding: clamp(64px, 12vw, 128px) 0 clamp(48px, 8vw, 96px);
+  background:
+    linear-gradient(100deg, rgba(14,18,23,.96) 35%, rgba(14,18,23,.8) 65%, rgba(14,18,23,.55)),
+    url("assets/img/hero-lobo.jpg") right center / cover no-repeat;
+}
 .hero__glow {
   position: absolute; inset: -20% 0 auto -10%;
   width: 70%; height: 520px;
@@ -183,7 +189,7 @@ p { margin: 0 0 1rem; }
 .about__text h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); }
 .about__signature { color: var(--text) !important; font-style: italic; font-weight: 500; border-left: 3px solid var(--accent); padding-left: 16px; margin: 1.4rem 0; }
 .about__mark { display: flex; justify-content: center; }
-.about__mark img { width: min(240px, 60%); height: auto; opacity: .95; filter: drop-shadow(0 20px 40px rgba(0,0,0,.5)); }
+.about__mark img { width: min(480px, 100%); height: auto; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,.5); }
 
 /* Contato --------------------------------------------------------- */
 .contact__grid { display: grid; grid-template-columns: 1fr; gap: 16px; }

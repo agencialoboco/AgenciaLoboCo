@@ -2,11 +2,11 @@
   "name": "Agência Lobo & Co",
   "short_name": "Lobo & Co",
   "description": "Agência de marketing digital: tráfego pago, SEO, sites e conteúdo.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0E1217",
   "theme_color": "#0E1217",
   "icons": [
-    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "assets/img/favicon.png", "sizes": "512x560", "type": "image/png", "purpose": "any maskable" }
   ]
 }
